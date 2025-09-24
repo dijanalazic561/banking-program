@@ -1,8 +1,11 @@
 
 import functions
+import time
 
 FILE = "new_todo.txt"
-
+now=time.strftime("%b,%d,%Y")
+print("The time is below:")
+print("It is", now)
 while True:
     user_action = input("enter add/edit/delete/exit: ").strip().lower()
     try:
@@ -61,7 +64,7 @@ while True:
                print("Goodbye!")
                break
     except Exception as e:
-        print("Erorr:",e)
+        print("Error:",e)
 
 
 
