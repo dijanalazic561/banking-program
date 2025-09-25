@@ -1,5 +1,5 @@
 
-FILE = "new_todo.txt"
+FILE = "todos.txt"
 
 def get_todos(filepath):
     with open(filepath, "r") as file:
