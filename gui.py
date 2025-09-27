@@ -10,6 +10,11 @@ window=sg.Window("My todo app",
                  layout=[[label], [input_box, add_button],[list_box, edit_button]],
                  font=("Helvetica",20))
 while True:
+    event, values = window.read()
+    if event in(sg.WIN_CLOSED,None):
+        break
+    if not isinstance(values,dict):
+        continue
     event,values=window.read()
     print(1,event)
     print(2,values)
