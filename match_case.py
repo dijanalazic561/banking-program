@@ -2,7 +2,7 @@
 import functions
 import time
 
-FILE = "new_todo.txt"
+FILE = "todos.txt"
 now=time.strftime("%b,%d,%Y")
 print("The time is below:")
 print("It is", now)
